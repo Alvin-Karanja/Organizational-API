@@ -38,6 +38,8 @@ public class DepartmentsTest {
         Departments testDepartments = setUpDepartments();
         assertEquals(12, testDepartments.getDpt_empNo());
     }
+
+
     @Test
     public void setEmployeesNumberCorrectNumber(){
         Departments testDepartments = setUpDepartments();
@@ -45,6 +47,8 @@ public class DepartmentsTest {
         assertNotEquals(10, testDepartments.getDpt_empNo());
 
     }
+
+
     @Test
     public void setDptNameCorrectName(){
         Departments testDepartments = setUpDepartments();
