@@ -25,9 +25,18 @@ public class EmployeesTest {
 
     @Test
     public void setEmployeesId() throws Exception {
-        Employees employees = setupEmployees();
+        Employees employees = setUpEmployees();
         employees.setId(4);
         assertNotEquals(2,employees.getId());
+    }
+
+    @Test
+    public void EmployeesInstantiatesCorrectlyWithCorrect_Values()throws Exception{
+        Employees employees= setUpEmployees();
+        assertEquals("Mark",employees.getEmp_name());
+        assertEquals("Badge 1234",employees.getEmp_details());
+        assertEquals("MD",employees.getEmp_position());
+        assertEquals("Directs",employees.getEmp_role());
     }
 
     public Employees setUpEmployees() {
