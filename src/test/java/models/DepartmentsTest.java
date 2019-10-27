@@ -35,21 +35,29 @@ public class DepartmentsTest {
 
     @Test
     public void getDepartmentEmployeesNumbersReturnsCorrectDescription() throws Exception {
-        Departments testDepartments = setupDepartments();
+        Departments testDepartments = setUpDepartments();
         assertEquals(12, testDepartments.getDpt_empNo());
     }
     @Test
     public void setEmployeesNumberCorrectNumber(){
-        Departments testDepartments = setupDepartments();
+        Departments testDepartments = setUpDepartments();
         testDepartments.setDpt_empNo(12);
         assertNotEquals(10, testDepartments.getDpt_empNo());
 
     }
     @Test
     public void setDptNameCorrectName(){
-        Departments testDepartments = setupDepartments();
+        Departments testDepartments = setUpDepartments();
         testDepartments.setDpt_name("Fire Department");
         assertNotEquals("Water Department", testDepartments.getDpt_name());
+
+    }
+
+    @Test
+    public void setDescriptionCorrectDescription(){
+        Departments testDepartments = setUpDepartments();
+        testDepartments.setDpt_description("Responsible for fire issues");
+        assertNotEquals("Responsible for water issues", testDepartments.getDpt_description());
 
     }
 }
