@@ -17,6 +17,7 @@ public class Departments {
     }
 
     public String getDpt_name() {
+        return dpt_name;
     }
 
     public String getDpt_description() {
@@ -27,8 +28,10 @@ public class Departments {
     }
 
     public long getDpt_empNo() {
+        return dpt_empNo;
     }
 
-    public void setDpt_name(String fire_department) {
+    public void setDpt_name(String dpt_name) {
+        this.dpt_name = dpt_name;
     }
 }
