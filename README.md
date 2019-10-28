@@ -45,5 +45,5 @@ Organisational Api gives you the ability to query for all the users and the depa
 contact me @ pavilionh6@gmail.com
 
 ### License
-The project is under[MIT license](https://github.com/Alvin-Karanja/Organisational-API/blob/master/LICENSE)
+The project is under[MIT license](https://github.com/Alvin-Karanja/Organizational-API/blob/master/LICENSE)
 Copyright &copy; 2019.All right reserved
